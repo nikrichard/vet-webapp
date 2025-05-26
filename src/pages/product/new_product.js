@@ -197,4 +197,4 @@ const NewProduct = () => {
     )
 }
 
-export default newProduct;
+export default NewProduct;
