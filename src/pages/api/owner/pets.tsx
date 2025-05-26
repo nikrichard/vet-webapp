@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import Pet from '../../models/pet';
+import { connectDB } from '@/libs/dbConnect';
+import Pet from '../../../models/pet';
 
 export default async (req:NextApiRequest, res:NextApiResponse) => {
     try {

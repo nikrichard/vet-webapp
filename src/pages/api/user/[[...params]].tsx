@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse, } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import User from '../../models/user';
+import { connectDB } from '@/libs/dbConnect';
+import User from '../../../models/user';
 import dayjs from 'dayjs';
 import moment from "moment";
 

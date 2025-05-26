@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/components/NavBar.js", "src/pages/profile.js", "src/pages/panel.js", "src/pages/libs/db.js", "src/pages/libs/db.js", "src/pages/api/hello.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/components/NavBar.js", "src/pages/profile.js", "src/pages/panel.js", "src/libs/db.js", "src/libs/db.js", "src/pages/api/hello.js"],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import ProductCategory from '../../models/productCategory';
+import { connectDB } from '@/libs/dbConnect';
+import ProductCategory from '../../../models/productCategory';
 
 export default async (req:NextApiRequest, res:NextApiResponse) => {
     try {

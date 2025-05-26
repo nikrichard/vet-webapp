@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import Product from '../../models/product';
+import { connectDB } from '@/libs/dbConnect';
+import Product from '../../../models/product';
 import { CallbackError } from "mongoose";
 
 export default async (req:NextApiRequest, res:NextApiResponse) => {

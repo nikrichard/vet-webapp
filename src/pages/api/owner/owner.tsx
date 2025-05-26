@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import Owner from '../../models/owner';
+import { connectDB } from '@/libs/dbConnect';
+import Owner from '../../../models/owner';
 
 export default async (req:NextApiRequest, res:NextApiResponse) => {
     try {

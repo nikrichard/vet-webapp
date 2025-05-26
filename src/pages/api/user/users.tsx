@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse, } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import User from '../../models/user';
+import { connectDB } from '@/libs/dbConnect';
+import User from '../../../models/user';
 
 export default async (req: NextApiRequest,res: NextApiResponse) => {
     const from  = Number(req.query.from || 0);

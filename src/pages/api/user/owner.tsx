@@ -1,2 +1,2 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { connectDB } from "@/pages/libs/dbConnect";
+import { connectDB } from "@/libs/dbConnect";

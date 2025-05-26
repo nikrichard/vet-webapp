@@ -1,6 +1,6 @@
 import { NextApiRequest, NextApiResponse, } from "next";
-import { connectDB } from '../../libs/dbConnect';
-import User from '../../models/user';
+import { connectDB } from '@/libs/dbConnect';
+import User from '../../../models/user';
 const reader = require('xlsx');
 
 //Método para ingresar nuevo trabajador
