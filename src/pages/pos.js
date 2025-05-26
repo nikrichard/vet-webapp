@@ -299,13 +299,13 @@ const NewPet = () => {
                                                 
                                             </div>
                                             <div className="col-sm-6">
-                                                <div className="row">
-                                                    <div className="col-md-12">
+                                                <div className="row" style={{marginTop: 24}}>
+                                                    <div className="col-md-12" >
                                                     <div className="table-responsive">
                                                         <table className="table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">N°</th>
+                                                                    <th scope="col">N°s</th>
                                                                     <th scope="col">DESCRIPCIÓN</th>
                                                                     <th scope="col">OBSERVACIÓN</th>
                                                                     <th scope="col">FECHA DE REGISTRO</th>
