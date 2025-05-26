@@ -176,7 +176,7 @@ const Pets = () => {
                                                         {   
                                                             Array.isArray(categories) &&
                                                             categories.map((c, index) => (
-                                                                <tr>key={c._id}>
+                                                                <tr key={index}>
                                                                     <th className="text-center" scope="row">{index+1}</th>
                                                                     <td>{c.description}</td>
                                                                     <td>{c.observation}</td>
