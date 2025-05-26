@@ -1,0 +1,16 @@
+.alert{
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #A5FFEF;
+    color: var(--primary_color);
+}
+
+.title_{
+    font-size: 15px;
+    font-weight: bold !important;
+}
+
+.message_{
+    font-size: 15px;
+}

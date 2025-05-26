@@ -1,0 +1,14 @@
+.header_contact_{
+    background-color: var(--primary_color);
+    height: 50px;
+}
+
+.div_contact_ {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,14 @@
+.option_card_{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.option_card_ span{
+    font-weight: bold;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 5px;
+}

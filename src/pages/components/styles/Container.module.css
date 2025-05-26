@@ -1,0 +1,23 @@
+.toogle_content_{
+    display: flex;
+    width: 100%;
+    padding: 2px;
+    justify-content: flex-end;
+    background-color: var(--secondary_color);
+    display: none;
+}
+
+.toogle_{
+    color: #fff !important;
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .toogle_content_{
+        display: block;
+        justify-content: flex-end;
+        align-items: end;
+    }
+}

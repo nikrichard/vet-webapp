@@ -1,0 +1,9 @@
+.profile_img_{
+    display: flex;
+}
+
+.content_footer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}

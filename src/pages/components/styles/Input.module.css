@@ -1,0 +1,23 @@
+.content_input_{
+    margin: 5px 0px;
+}
+
+.content_input_ label{
+    width: 100%;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+
+.content_input_ input{
+    border-radius: 2px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border: 1px solid #D4D4D4;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+.content_input_ input:focus{
+    outline: none;
+    border: 1px solid #40c0f3;
+}

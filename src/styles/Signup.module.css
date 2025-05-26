@@ -1,0 +1,20 @@
+.head_login{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_login span{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--secondary_color);
+}
+
+/*Register module*/
+.content_footer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+}

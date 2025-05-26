@@ -1,0 +1,167 @@
+.card_content{
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.card_entity:hover{
+    transition: transform .4s;
+    transform: scale(1.04);
+}
+
+.options_{
+    border: 1px solid #ebebeb;
+    margin-top: 10px
+}
+
+.options_ ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.options_ ul li{
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+}
+
+.options_ ul li:hover{
+    background-color: var(--success_color);
+    color: #fff;
+}
+
+.modal_header_{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+.modal_header_ span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.modal_header_ button{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+.step_container_{
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.step_number_{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: var(--alternative_color);
+}
+
+.step_number_ span{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.dates_content_{
+    background-color: #fff;
+    display: flex;
+}
+
+.dates_content_ ul{
+    display: flex;
+    list-style: none;
+}
+
+.dates_content_ ul li{
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.step_content_{
+    width: 100%;
+}
+
+.derivate_file_{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.info_derivate_{
+    display: flex;
+    list-style: none;
+}
+
+.info_derivate_ li{
+    display: flex;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.view_document_{
+    background-color: red;
+    width: 300px;
+}
+
+/*Styles Accordion*/
+.accordion_header_{
+    padding: 4px 10px;
+    background-color: var(--header_color);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.accordion_header_ span{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark_color);
+}
+
+.accordion_body_ {
+    padding: 5px;
+}
+
+.table_{
+    margin-top: 5px;
+}
+
+.table_ tr th{
+    font-size: 13px;
+    padding: 8px 5px;
+}
+
+.table_ tr td{
+    padding: 1px 10px;
+    font-size: 12px;
+}
+
+.content_file_{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_file_{
+    text-align: center;
+    font-size: 9px;
+    width: 100%;
+    color: #fff;
+}
+
+.content_file_ button{
+    padding: 3px;
+    border: none;
+    background-color: transparent;
+}
