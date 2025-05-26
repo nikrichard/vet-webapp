@@ -153,83 +153,10 @@ const NewPet = () => {
                                     <div>
                                         <div className="row">
                                             <div className="col-sm-6">
-                                                <div className="col-md-12">
-                                                    <label className="label_">Producto o Servicio:</label>
-                                                    <input 
-                                                        placeholder="Ingresar lote" 
-                                                        className="input_ w-100"
-                                                        onBlur={handleBlur}
-                                                        onChange={handleChange}
-                                                        name="description"
-                                                        value={form.description}
-                                                    />                        
-                                                </div>
-                                                <div className="col-md-12">
-                                                    <div className="table-responsive">
-                                                        <table className="table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col">N°</th>
-                                                                    <th scope="col">DESCRIPCIÓN</th>
-                                                                    <th scope="col">OBSERVACIÓN</th>
-                                                                    <th scope="col">FECHA DE REGISTRO</th>
-                                                                    <th scope="col">ACCIÓN</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                {   
-                                                                    /*Array.isArray(categories) &&
-                                                                    categories.map((c, index) => (
-                                                                        <tr>
-                                                                            <th className="text-center" scope="row">{index+1}</th>
-                                                                            <td>{c.description}</td>
-                                                                            <td>{c.observation}</td>
-                                                                            <td className="text-center">{new Date(c.registrationDate).toLocaleDateString('es-ES')}</td>
-                                                                            <td className="text-center">
-                                                                                <span className="badge_ btn_primary_" style={{marginLeft: 5}}>
-                                                                                    <Eye
-                                                                                        height="15px"
-                                                                                        width="15px" 
-                                                                                        color={"#fff"}
-                                                                                    />
-                                                                                </span>
-                                                                                <span className="badge_ btn_success_" style={{marginLeft: 5}}>
-                                                                                    <Pencil
-                                                                                        height="15px"
-                                                                                        width="15px" 
-                                                                                        color={"#fff"}
-                                                                                    />
-                                                                                </span>
-                                                                                <span className="badge_ btn_danger_" style={{marginLeft: 5}} onClick={()=>deleteCategory(c.description, c._id)}>
-                                                                                    <Trash 
-                                                                                        height="15px"
-                                                                                        width="15px"
-                                                                                        color={"#fff"}
-                                                                                    />
-                                                                                </span>
-                                                                            </td>
-                                                                        </tr>
-                                                                    ))*/
-                                                                    
-                                                                }
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-12">
-                                                    <div>
-                                                        <label className="label_">Lote:</label>
-                                                        <select name="select" className="input_ w-100">
-                                                            <option value="value2">1</option>
-                                                            <option value="value1">2</option>
-                                                        </select>                        
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-12">
-                                                    <div>
-                                                        <label className="label_">Precio:</label>
-                                                        <input
-                                                            type="number"
+                                                <div className="row">
+                                                    <div className="col-md-12">
+                                                        <label className="label_">Producto o Servicio:</label>
+                                                        <input 
                                                             placeholder="Ingresar lote" 
                                                             className="input_ w-100"
                                                             onBlur={handleBlur}
@@ -239,48 +166,137 @@ const NewPet = () => {
                                                         />                        
                                                     </div>
                                                 </div>
-                                                <div className="col-md-12">
-                                                    <div>
-                                                        <label className="label_">Cantidad:</label>
-                                                        <input
-                                                            type="number"
-                                                            placeholder="Ingresar lote" 
-                                                            className="input_ w-100"
-                                                            onBlur={handleBlur}
-                                                            onChange={handleChange}
-                                                            name="description"
-                                                            value={form.description}
-                                                        />                        
+                                                <div className='row' style={{marginTop: 10}}>
+                                                    <div className="col-md-12">
+                                                        <div className="table-responsive">
+                                                            <table className="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">N°</th>
+                                                                        <th scope="col">DESCRIPCIÓN</th>
+                                                                        <th scope="col">OBSERVACIÓN</th>
+                                                                        <th scope="col">FECHA DE REGISTRO</th>
+                                                                        <th scope="col">ACCIÓN</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    {   
+                                                                        /*Array.isArray(categories) &&
+                                                                        categories.map((c, index) => (
+                                                                            <tr>
+                                                                                <th className="text-center" scope="row">{index+1}</th>
+                                                                                <td>{c.description}</td>
+                                                                                <td>{c.observation}</td>
+                                                                                <td className="text-center">{new Date(c.registrationDate).toLocaleDateString('es-ES')}</td>
+                                                                                <td className="text-center">
+                                                                                    <span className="badge_ btn_primary_" style={{marginLeft: 5}}>
+                                                                                        <Eye
+                                                                                            height="15px"
+                                                                                            width="15px" 
+                                                                                            color={"#fff"}
+                                                                                        />
+                                                                                    </span>
+                                                                                    <span className="badge_ btn_success_" style={{marginLeft: 5}}>
+                                                                                        <Pencil
+                                                                                            height="15px"
+                                                                                            width="15px" 
+                                                                                            color={"#fff"}
+                                                                                        />
+                                                                                    </span>
+                                                                                    <span className="badge_ btn_danger_" style={{marginLeft: 5}} onClick={()=>deleteCategory(c.description, c._id)}>
+                                                                                        <Trash 
+                                                                                            height="15px"
+                                                                                            width="15px"
+                                                                                            color={"#fff"}
+                                                                                        />
+                                                                                    </span>
+                                                                                </td>
+                                                                            </tr>
+                                                                        ))*/
+                                                                        
+                                                                    }
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-12">
-                                                    <div>
-                                                        <label className="label_">Descuento:</label>
-                                                        <input
-                                                            type="number"
-                                                            placeholder="Ingresar lote" 
-                                                            className="input_ w-100"
-                                                            onBlur={handleBlur}
-                                                            onChange={handleChange}
-                                                            name="description"
-                                                            value={form.description}
-                                                        />                        
+                                                <div className="row">
+                                                    <div className="col-sm-6">
+                                                        <div>
+                                                            <label className="label_">Lote:</label>
+                                                            <select name="select" className="input_ w-100">
+                                                                <option value="value2">1</option>
+                                                                <option value="value1">2</option>
+                                                            </select>                        
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-sm-6">
+                                                        <div>
+                                                            <label className="label_">Precio:</label>
+                                                            <input
+                                                                type="number"
+                                                                placeholder="Ingresar lote" 
+                                                                className="input_ w-100"
+                                                                onBlur={handleBlur}
+                                                                onChange={handleChange}
+                                                                name="description"
+                                                                value={form.description}
+                                                            />                        
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div className="col-md-12">
-                                                    <div>
-                                                        <label className="label_">Subtotal:</label>
-                                                        <input
-                                                            type="number"
-                                                            placeholder="Ingresar lote" 
-                                                            className="input_ w-100"
-                                                            onBlur={handleBlur}
-                                                            onChange={handleChange}
-                                                            name="description"
-                                                            value={form.description}
-                                                        />                        
+                                                <div className="row">
+                                                    <div className="col-sm-6">
+                                                        <div>
+                                                            <label className="label_">Cantidad:</label>
+                                                            <input
+                                                                type="number"
+                                                                placeholder="Ingresar lote" 
+                                                                className="input_ w-100"
+                                                                onBlur={handleBlur}
+                                                                onChange={handleChange}
+                                                                name="description"
+                                                                value={form.description}
+                                                            />                        
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-sm-6">
+                                                        <div>
+                                                            <label className="label_">Descuento:</label>
+                                                            <input
+                                                                type="number"
+                                                                placeholder="Ingresar lote" 
+                                                                className="input_ w-100"
+                                                                onBlur={handleBlur}
+                                                                onChange={handleChange}
+                                                                name="description"
+                                                                value={form.description}
+                                                            />                        
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <div className="row">
+                                                    <div className="col-sm-6">
+                                                        <div>
+                                                            <label className="label_">Subtotal:</label>
+                                                            <input
+                                                                type="number"
+                                                                placeholder="Ingresar lote" 
+                                                                className="input_ w-100"
+                                                                onBlur={handleBlur}
+                                                                onChange={handleChange}
+                                                                name="description"
+                                                                value={form.description}
+                                                            />                        
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-sm-6">
+                                                        <div style={{marginTop: 20}}>
+                                                            <button className="btn_ btn_secondary_ w-100" onClick={categoryRegistration}>Agregar a carrito</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
                                             </div>
                                             <div className="col-sm-6">
                                                 <div className="row">
@@ -345,9 +361,7 @@ const NewPet = () => {
                                     
                                     <div className="row" style={{marginTop: 10}}>
                                         <div className="col-md-6">
-                                            <div>
-                                                <button className="btn_ btn_secondary_ w-100" onClick={categoryRegistration}>Agregar</button>
-                                            </div>
+                                            
                                         </div>
                                         <div className="col-md-6">
                                             <div>
