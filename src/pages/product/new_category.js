@@ -16,7 +16,7 @@ const initForm = {
     observation: ''
 }
 
-const newCategorie = () => {
+const NewCategorie = () => {
     const [form, setForm] = useState(initForm);
 
     /**
@@ -128,4 +128,4 @@ const newCategorie = () => {
     )
 }
 
-export default newCategorie;
+export default NewCategorie;

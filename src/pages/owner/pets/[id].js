@@ -320,7 +320,7 @@ const NewPet = () => {
                                                         {   
                                                             Array.isArray(pets) &&
                                                             pets.map((c, index) => (
-                                                                <tr>
+                                                                <tr key={c._id}>
                                                                     <td>{c.name}</td>
                                                                     <td>{c.sex}</td>
                                                                     <td>{c.color}</td>

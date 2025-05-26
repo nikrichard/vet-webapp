@@ -178,7 +178,7 @@ const Owners = () => {
                                                         {   
                                                             Array.isArray(owners) &&
                                                             owners.map((c, index) => (
-                                                                <tr>
+                                                                <tr key={c._id}>
                                                                     <td>{c.name}</td>
                                                                     <td>{c.dni}</td>
                                                                     <td>{c.address}</td>

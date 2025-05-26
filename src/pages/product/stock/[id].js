@@ -293,7 +293,7 @@ const Stock = () => {
                                                         {   
                                                             Array.isArray(stocks) &&
                                                             stocks.map((c, index) => (
-                                                                <tr>
+                                                                <tr key={index}>
                                                                     <td>{c.nameLote}</td>
                                                                     <td>{c.typeOfPackage}</td>
                                                                     <td>{c.typeOfConcentration}</td>

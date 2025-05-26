@@ -23,7 +23,7 @@ const initCategories = {
     categories: []
 }
 
-const newProduct = () => {
+const NewProduct = () => {
     const [form, setForm] = useState(initForm);
     const [categories, setCategories] = useState(initCategories)
 

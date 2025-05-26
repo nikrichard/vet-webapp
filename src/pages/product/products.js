@@ -178,7 +178,7 @@ const Products = () => {
                                                         {   
                                                             Array.isArray(products) &&
                                                             products.map((c, index) => (
-                                                                <tr>
+                                                                <tr key={c._id}>
                                                                     
                                                                     <td>{c.name}</td>
                                                                     <td>{c.description}</td>
